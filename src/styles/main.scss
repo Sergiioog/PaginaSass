@@ -1,0 +1,22 @@
+$color-fondo : #202020;
+$color-header: rgba(52, 49, 49, 0.42);
+$color-btn-registrarse: #F2E7E7;
+$blanco-letras: #EAE0E0;
+
+html {
+    color: $blanco-letras;
+    height: 100%;
+    width: 100%;
+    background-color: $color-fondo;
+}
+
+/*------------HEADER---------------*/
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: $color-header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*------------HEADER---------------*/
