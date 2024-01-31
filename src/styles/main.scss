@@ -75,6 +75,7 @@ header h2 {
 }
 
 #seccionTitulo h1 {
+    font-size: 60px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -83,6 +84,9 @@ header h2 {
 }
 
 #seccionTitulo h2 {
+    font-size: 30px;
+    position: absolute;
+    top: 60%;
     text-align: center;
     width: 100%;
 }
