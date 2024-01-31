@@ -17,15 +17,14 @@ header {
     background-color: $color-header !important;
     display: flex;
     justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 20px;
     align-items: center;
 }
-// main.scss
-
+header h2 {
+    padding-left: 25px;
+}
 .botonOffCanvas {
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,6 +32,7 @@ header {
     border: white 1px solid;
     background-color: transparent;
     color: white;
+    margin-right: 14px;
 }
 .seccionDrawer {
     white-space: nowrap;
@@ -42,7 +42,7 @@ header {
     font-weight: bold;
     color: #323030;
     letter-spacing: -0.5px;
-    margin-top: 5px;
+    margin-top: 7px;
 }
 .divSeccionHeader {
     width: auto;
@@ -52,5 +52,26 @@ header {
     cursor: pointer;
     color: $color-header;
 }
-  
 /*------------HEADER---------------*/
+
+/*------------SECCIONES------------*/
+
+/*---SECCIÓN TÍTULO---*/
+#seccionTitulo {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Oculta el contenido que sobresale */
+}
+
+#fotoInicial {
+    height: 600px;
+    margin-bottom: 100px;
+    object-fit: cover; /* Ajusta la imagen manteniendo su relación de aspecto */
+}
+
+/*---SECCIÓN TÍTULO---*/
+
+/*------------SECCIONES------------*/

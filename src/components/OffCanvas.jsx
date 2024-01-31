@@ -17,6 +17,7 @@ const App = () => {
     <>
       <Space>
         <Button  className='botonOffCanvas' onClick={showDrawer}>
+          X
         </Button>
       </Space>
       <Drawer
@@ -32,7 +33,7 @@ const App = () => {
         <p className='seccionDrawer'>Inicio</p>
       </div>
       <div className='divSeccionHeader'>
-        <p className='seccionDrawer'>Mi Calendario</p>
+        <p className='seccionDrawer'>Mi calendario</p>
       </div>
       <div className='divSeccionHeader'>
         <p className='seccionDrawer'>Ejercicios</p>
