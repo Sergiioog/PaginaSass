@@ -20,16 +20,26 @@ const App = () => {
         </Button>
       </Space>
       <Drawer
-        title="Basic Drawer"
+        title="MyAgenda"
         placement={placement}
         closable={false}
         onClose={onClose}
         open={open}
         key={placement}
+        height={260}
       >
-        <p>Some contents...</p>
-        <p>Some contents...</p>
-        <p>Some contents...</p>
+      <div className='divSeccionHeader'>
+        <p className='seccionDrawer'>Inicio</p>
+      </div>
+      <div className='divSeccionHeader'>
+        <p className='seccionDrawer'>Mi Calendario</p>
+      </div>
+      <div className='divSeccionHeader'>
+        <p className='seccionDrawer'>Ejercicios</p>
+      </div>
+      <div className='divSeccionHeader'>
+        <p className='seccionDrawer'>Estiramientos</p>
+      </div>
       </Drawer>
     </>
   );
