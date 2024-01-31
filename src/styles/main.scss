@@ -58,7 +58,7 @@ header h2 {
 
 /*---SECCIÓN TÍTULO---*/
 #seccionTitulo {
-    height: 40vh;
+    height: 50vh;
     width: 100%;
     display: flex;
     flex-direction: column; /* Cambiamos la dirección del eje a columna */
@@ -66,10 +66,11 @@ header h2 {
     align-items: center;
     position: relative;
     overflow: hidden;
+    background-color: red;
 }
 
 #fotoInicial {
-    height: 600px;
+   width: 1000px;
     margin-bottom: 100px;
     object-fit: cover;
 }
@@ -81,6 +82,7 @@ header h2 {
     transform: translateY(-50%);
     text-align: center;
     width: 100%;
+    color: white;
 }
 
 #seccionTitulo h2 {
@@ -89,9 +91,44 @@ header h2 {
     top: 60%;
     text-align: center;
     width: 100%;
+    color: white;
 }
 
 
 /*---SECCIÓN TÍTULO---*/
+/*---SECCIÓN NUESTRAS FUNCIONES---*/
+#seccionNuestrasFunciones {
+    margin-top: 40px;
+}
 
+#seccionNuestrasFunciones h1 {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+#datos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Ajusta el alto de los elementos hijos para que ocupen todo el alto */
+}
+
+#datosTexto {
+    width: 60%;
+    padding: 30px;
+    box-sizing: border-box; /* Incluye padding en el ancho del elemento */
+}
+
+#datosImagen {
+    width: 40%;
+    overflow: hidden; /* Evita que la imagen se desborde del contenedor */
+}
+
+#cBumSin {
+    height: 100%; /* Ajusta la altura al 100% del contenedor */
+    width: 100%;
+    object-fit: cover;
+}
+
+/*---SECCIÓN NUESTRAS FUNCIONES---*/
 /*------------SECCIONES------------*/
