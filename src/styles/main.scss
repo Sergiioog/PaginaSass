@@ -9,8 +9,10 @@ html {
     width: 100%;
     background-color: $color-fondo !important;;
     overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  
 }
-
 /*------------HEADER---------------*/
 header {
     width: 100%;
@@ -60,7 +62,6 @@ header h2 {
 /*---SECCIÓN TÍTULO---*/
 #seccionTitulo {
     height: 50vh;
-    width: 100%;
     display: flex;
     flex-direction: column; /* Cambiamos la dirección del eje a columna */
     justify-content: center;
@@ -79,19 +80,24 @@ header h2 {
     font-size: 60px;
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-90%);
     text-align: center;
     width: 100%;
     color: white;
+    letter-spacing: -3px;
 }
 
 #seccionTitulo h2 {
     font-size: 30px;
     position: absolute;
-    top: 60%;
+    top: 48%;
     text-align: center;
     width: 100%;
     color: white;
+    line-height: 30px;
+    letter-spacing: -1px;
+    margin-top: 10px;
+
 }
 
 
@@ -103,35 +109,47 @@ header h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: auto;
+    max-width: 90%;
+    margin: auto; /* Añadí esto para centrar horizontalmente en el caso de max-width < 100% */
 }
 
+
 #seccionNuestrasFunciones h1 {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
     color: white;
+    letter-spacing: -1.5px;
+    margin-top: 30px;
+    line-height: 40px;
+    
 }
 
 #datos {
-    display: flex;
-    justify-content: center;
-    align-items: stretch; /* Ajusta el alto de los elementos hijos para que ocupen todo el alto */
+    max-width: 90%;
+    height: auto;
+    margin-top: 15px;
 }
-
 #datosTexto {
-    width: 60%;
-    padding: 30px;
-    box-sizing: border-box; /* Incluye padding en el ancho del elemento */
+    height: auto;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 550; /* Puedes ajustar este valor según tus preferencias */
+ 
 }
 
 #datosImagen {
-    width: 40%;
+    width: 100%;
+    height: auto;
     overflow: hidden; /* Evita que la imagen se desborde del contenedor */
 }
 
 #cBumSin {
     height: 100%; /* Ajusta la altura al 100% del contenedor */
     width: 100%;
+    max-width: 100%;
     object-fit: cover;
+    display: none;
 }
 
 /*---SECCIÓN NUESTRAS FUNCIONES---*/
