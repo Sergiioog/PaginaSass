@@ -1,7 +1,10 @@
 <section>
     <h1>Por qué MyAgenda</h1>
     <ul>
-        <li></li>
+        <div class="divSeccion">
+            <li></li>
+            <p>Hola</p>
+        </div>
         <li></li>
         <li></li>
         <li></li>
@@ -18,40 +21,62 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: auto;
+    height: 100%;
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
 }
+
 section h1 {
     font-size: 35px;
     text-align: center;
     color: white;
     letter-spacing: -1.5px;
     line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 ul {
     margin: 50px;
     width: 100%;
     height: auto;
-    display: grid;
-    grid-template-columns: auto auto; /* Dos columnas de ancho automático */
-    justify-content: center; /* Centra el grid horizontalmente */
-    gap: 120px; /* Márgenes equitativos entre elementos */
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Solo necesitas definir align-items una vez */
+    flex-direction: column;
+}
+.divSeccion {
+    background-color: red;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+
 }
+
 li {
-    
     height: 120px;
-        width: 120px;
-        background-color: gray;
-        background: rgba( 213, 213, 213, 0.1 );
-        box-shadow:2px 2px 20px 0.1px rgb(154, 154, 154);   
-        backdrop-filter: blur( 10.5px );
-        -webkit-backdrop-filter: blur( 10.5px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-        border-radius: 100%;
+    width: 120px;
+    background-color: gray;
+    background: rgba(213, 213, 213, 0.1);
+    box-shadow: 2px 2px 20px 0.1px rgb(154, 154, 154);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(10.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
 }
+
+.divSeccion p {
+    background-color: blue;
+    width: 300px;
+    max-width: 300px;
+    margin-top: 15px;
+    height: 120px;
+}
+
 </style>
