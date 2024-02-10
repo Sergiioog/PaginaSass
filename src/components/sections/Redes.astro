@@ -1,21 +1,33 @@
+---
+import BotonSocial from "../botonSocial.astro"
+---
 <section>
     <h1>¡Síguenos en nuestras redes sociales!</h1>
     <div>
+        <BotonSocial 
+            width={150}, 
+            height={50}, 
+            borderRadius={10} 
+            background="rgba( 82, 125, 255, 0.25 )",
+            boxShadow1={0},
+            boxShadow2={8},
+            boxShadow3={32},
+            boxShadow4={0}
+            boxShadowRGBA="rgba( 31, 38, 135, 0.37 )",
+            backdropFilter={20},
+            border="1",  
+            titulo="LinkedIn",
+            rutaImagen="assets/icons/linkedin.svg",
+            altImagen="LinkedIn Boton",
+            rutaDestino="linkedIn.com"
+             />
         <a href="/">
             <img src="" alt="">
-            <p>Hola</p>
+            <p>GitHub</p>
         </a>
         <a href="/">
             <img src="" alt="">
-            <p>Hola</p>
-        </a>
-        <a href="/">
-            <img src="" alt="">
-            <p>Hola</p>
-        </a>
-        <a href="/">
-            <img src="" alt="">
-            <p>Hola</p>
+            <p>Twitter</p>
         </a>
     </div>
 </section>
@@ -67,5 +79,6 @@ section div a {
     text-decoration: none;
     color: white;
 }
+
 
 </style>
