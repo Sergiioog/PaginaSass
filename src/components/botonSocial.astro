@@ -11,6 +11,8 @@ interface Props {
     boxShadowRGBA : string;
     backdropFilter: any;
     border: string;
+    borderType ?: string;
+    borderRgba: string;
     rutaDestino : string;
     titulo : string;
     rutaImagen : string;
@@ -18,7 +20,7 @@ interface Props {
 }
 
 const {width, height, borderRadius, background, boxShadow1, boxShadow2,boxShadow3,boxShadow4, boxShadowRGBA,
-backdropFilter, border,rutaDestino, titulo, rutaImagen, altImagen} = Astro.props;
+backdropFilter, border,borderType,borderRgba, rutaDestino, titulo, rutaImagen, altImagen} = Astro.props;
 ---
 <a href={rutaDestino} style={{
     display: 'flex',
@@ -30,9 +32,15 @@ backdropFilter, border,rutaDestino, titulo, rutaImagen, altImagen} = Astro.props
     background: background,
     boxShadow: `${boxShadow1}px ${boxShadow2}px ${boxShadow3}px ${boxShadow4}px ${boxShadowRGBA}`,
     backdropFilter: `blur(${backdropFilter}px)`,
-    border: `${border}px solid rgba(255, 255, 255, 0.18)`,
+
+    border: `${border}px ${borderType} ${borderRgba}`,
+    borderType: `${borderType}`,
+    borderRgba: `${borderRgba}`,
     textDecoration: 'none',
-    boxSizing: 'border-box', // Asegura que el tamaño total del botón sea el especificado
+    boxSizing: 'border-box', 
+    transition: 'transform 0.3s ease',
+    marginRight: '15px',
+    marginLeft: '15px' /* Agrega la transición para la propiedad 'transform' con una duración de 0.3 segundos y una función de aceleración */
 }}>
     <img src={rutaImagen} alt={altImagen} style={{
         maxWidth: '100%',
@@ -51,13 +59,12 @@ backdropFilter, border,rutaDestino, titulo, rutaImagen, altImagen} = Astro.props
         fontWeight: 'bold',
         marginTop: '2px' }}>{titulo}</span>
 </a>
-
   
 
+<style lang="scss">
 
-
-
-
-
-
+a:hover {
+    transform: scale(1.05);
+}
 </style>
+

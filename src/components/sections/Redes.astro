@@ -8,27 +8,60 @@ import BotonSocial from "../botonSocial.astro"
             width={150}, 
             height={50}, 
             borderRadius={10} 
-            background="rgba( 82, 125, 255, 0.25 )",
+            background="rgba( 0, 123, 255, 0.25 )",
             boxShadow1={0},
             boxShadow2={8},
             boxShadow3={32},
             boxShadow4={0}
-            boxShadowRGBA="rgba( 31, 38, 135, 0.37 )",
+            boxShadowRGBA="rgba(139, 198, 255, 0.86)",
             backdropFilter={20},
-            border="1",  
+            border="1", 
+            borderType="solid",
+            borderRgba="rgba( 255, 255, 255, 0.18 )" 
             titulo="LinkedIn",
             rutaImagen="assets/icons/linkedin.svg",
             altImagen="LinkedIn Boton",
             rutaDestino="linkedIn.com"
-             />
-        <a href="/">
-            <img src="" alt="">
-            <p>GitHub</p>
-        </a>
-        <a href="/">
-            <img src="" alt="">
-            <p>Twitter</p>
-        </a>
+        />
+        <BotonSocial 
+            width={150}, 
+            height={50}, 
+            borderRadius={10} 
+            background="rgba( 51, 51, 51, 0.2 )",
+            boxShadow1={0},
+            boxShadow2={8},
+            boxShadow3={32},
+            boxShadow4={0}
+            boxShadowRGBA="rgba(209, 209, 209, 0.86)",
+            backdropFilter={20},
+            border="1", 
+            borderType="solid",
+            borderRgba="rgba( 255, 255, 255, 0.18 )"  
+            titulo="GitHub",
+            rutaImagen="assets/icons/github.svg",
+            altImagen="GitHub Boton",
+            rutaDestino="GihtUB.com"
+        />
+        <BotonSocial 
+            width={150}, 
+            height={50}, 
+            borderRadius={10} 
+            background="rgba( 0, 0, 0, 0.2 )",
+            boxShadow1={0},
+            boxShadow2={8},
+            boxShadow3={32},
+            boxShadow4={0}
+            boxShadowRGBA="rgba(165, 161, 163, 0.86)",
+            backdropFilter={20},
+            border="1",  
+            borderType="solid",
+            borderRgba="rgba( 255, 255, 25, 0.18 )" 
+            titulo="Twitter",
+            rutaImagen="assets/icons/x.svg",
+            altImagen="LinkedIn Boton",
+            rutaDestino="linkedIn.com"
+        />
+        
     </div>
 </section>
 
@@ -65,20 +98,4 @@ section div {
     margin-bottom: 30px;
 
 }
-section div a {
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 40px;
-    width: 100px;
-    max-width: 100px;
-    border-radius: 2px;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    color: white;
-}
-
-
 </style>
