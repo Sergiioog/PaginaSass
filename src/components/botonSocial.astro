@@ -1,0 +1,70 @@
+---
+interface Props {
+    width : number;
+    height : number;
+    borderRadius : number;
+    background : string;
+    boxShadow1 ?: number;
+    boxShadow2 ?: number;
+    boxShadow3 ?: number;
+    boxShadow4 ?: number;
+    boxShadowRGBA : string;
+    backdropFilter: any;
+    border: string;
+    borderType ?: string;
+    borderRgba: string;
+    rutaDestino : string;
+    titulo : string;
+    rutaImagen : string;
+    altImagen: string;
+}
+
+const {width, height, borderRadius, background, boxShadow1, boxShadow2,boxShadow3,boxShadow4, boxShadowRGBA,
+backdropFilter, border,borderType,borderRgba, rutaDestino, titulo, rutaImagen, altImagen} = Astro.props;
+---
+<a href={rutaDestino} style={{
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: `${width}px`,
+    height: `${height}px`,
+    borderRadius: `${borderRadius}px`,
+    background: background,
+    boxShadow: `${boxShadow1}px ${boxShadow2}px ${boxShadow3}px ${boxShadow4}px ${boxShadowRGBA}`,
+    backdropFilter: `blur(${backdropFilter}px)`,
+
+    border: `${border}px ${borderType} ${borderRgba}`,
+    borderType: `${borderType}`,
+    borderRgba: `${borderRgba}`,
+    textDecoration: 'none',
+    boxSizing: 'border-box', 
+    transition: 'transform 0.3s ease',
+    marginRight: '15px',
+    marginLeft: '15px' /* Agrega la transición para la propiedad 'transform' con una duración de 0.3 segundos y una función de aceleración */
+}}>
+    <img src={rutaImagen} alt={altImagen} style={{
+        maxWidth: '100%',
+        maxHeight: '100%',
+        width: '23%', // Ajusta el ancho automáticamente
+        height: 'auto', // Ajusta la altura automáticamente
+        flexGrow: 0, // Evita que la imagen se expanda para llenar el espacio
+        flexShrink: 0, // Evita que la imagen se encoja
+        marginLeft : '10px'
+    }} />
+    <span style={{ 
+        color: 'white', 
+        padding: '10px',
+        marginRight: '20px',
+        fontSize : '20px',
+        fontWeight: 'bold',
+        marginTop: '2px' }}>{titulo}</span>
+</a>
+  
+
+<style lang="scss">
+
+a:hover {
+    transform: scale(1.05);
+}
+</style>
+

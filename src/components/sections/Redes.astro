@@ -1,0 +1,101 @@
+---
+import BotonSocial from "../botonSocial.astro"
+---
+<section>
+    <h1>¡Síguenos en nuestras redes sociales!</h1>
+    <div>
+        <BotonSocial 
+            width={150}, 
+            height={50}, 
+            borderRadius={10} 
+            background="rgba( 0, 123, 255, 0.25 )",
+            boxShadow1={0},
+            boxShadow2={8},
+            boxShadow3={32},
+            boxShadow4={0}
+            boxShadowRGBA="rgba(139, 198, 255, 0.86)",
+            backdropFilter={20},
+            border="1", 
+            borderType="solid",
+            borderRgba="rgba( 255, 255, 255, 0.18 )" 
+            titulo="LinkedIn",
+            rutaImagen="assets/icons/linkedin.svg",
+            altImagen="LinkedIn Boton",
+            rutaDestino="linkedIn.com"
+        />
+        <BotonSocial 
+            width={150}, 
+            height={50}, 
+            borderRadius={10} 
+            background="rgba( 51, 51, 51, 0.2 )",
+            boxShadow1={0},
+            boxShadow2={8},
+            boxShadow3={32},
+            boxShadow4={0}
+            boxShadowRGBA="rgba(209, 209, 209, 0.86)",
+            backdropFilter={20},
+            border="1", 
+            borderType="solid",
+            borderRgba="rgba( 255, 255, 255, 0.18 )"  
+            titulo="GitHub",
+            rutaImagen="assets/icons/github.svg",
+            altImagen="GitHub Boton",
+            rutaDestino="GihtUB.com"
+        />
+        <BotonSocial 
+            width={150}, 
+            height={50}, 
+            borderRadius={10} 
+            background="rgba( 0, 0, 0, 0.2 )",
+            boxShadow1={0},
+            boxShadow2={8},
+            boxShadow3={32},
+            boxShadow4={0}
+            boxShadowRGBA="rgba(165, 161, 163, 0.86)",
+            backdropFilter={20},
+            border="1",  
+            borderType="solid",
+            borderRgba="rgba( 255, 255, 25, 0.18 )" 
+            titulo="Twitter",
+            rutaImagen="assets/icons/x.svg",
+            altImagen="LinkedIn Boton",
+            rutaDestino="linkedIn.com"
+        />
+        
+    </div>
+</section>
+
+<style lang="scss">
+    section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section h1 {
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    letter-spacing: -1.5px;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section div {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+</style>
