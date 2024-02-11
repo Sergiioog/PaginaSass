@@ -1,15 +1,65 @@
+<script>
+
+   window.addEventListener('scroll', function() {
+        let divMac = document.getElementById('divMac');
+        let divPosition = divMac.getBoundingClientRect().top;
+        let viewportHeight = window.innerHeight;
+
+        if (divPosition < viewportHeight / 2) {
+            divMac.classList.add('active');
+        } else {
+            divMac.classList.remove('active');
+        }
+    });
+
+    window.addEventListener('scroll', function() {
+        let divIpad = document.getElementById('divIpad');
+        let divPosition = divIpad.getBoundingClientRect().top;
+        let viewportHeight = window.innerHeight;
+
+        if (divPosition < viewportHeight / 2) {
+            divIpad.classList.add('active');
+        } else {
+            divIpad.classList.remove('active');
+        }
+    });
+
+    window.addEventListener('scroll', function() {
+        let divIphone = document.getElementById('divIphone');
+        let divPosition = divIphone.getBoundingClientRect().top;
+        let viewportHeight = window.innerHeight;
+
+        if (divPosition < viewportHeight / 2) {
+            divIphone.classList.add('active');
+        } else {
+            divIphone.classList.remove('active');
+        }
+    });
+
+
+
+
+</script>
+
 <section>
+
     <h1>MyAgenda, tu aplicación favorita</h1>
-    <div>
+    <div id="divMac">
         <img src="assets/mockups/macbook_small.png" alt="Macbook">
-        <img src="assets/mockups/ipad_small.png" alt="Macbook">
-        <img src="assets/mockups/iphones_small.png" alt="Macbook">
     </div>
+    <div id="divIpad">
+        <img src="assets/mockups/ipad_small.png" alt="Ipad">
+    </div>
+    <div id="divIphone">
+        <img src="assets/mockups/iphones_small.png" alt="Iphone">
+    </div>
+
 </section>
 
 <style lang="scss">
+
     section {
-        margin-top: 90px;
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +84,7 @@ section div {
     height: auto;
     width: 100%;
     margin-top: 30px;
+    
 }
 section div img {
     object-fit: cover;
@@ -41,4 +92,41 @@ section div img {
     width: 100%;
     height: 100%;
 }
+
+#divMac {
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: transform 0.8s ease;
+}
+#divIpad {
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 0.8s ease;
+}
+#divIphone {
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(25%);
+    transition: transform 0.8s ease;
+}
+#divMac.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+#divIpad.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+#divIphone.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+
 </style>

@@ -59,12 +59,45 @@ const {height, width,backgroundRGBA, boxShadow1, boxShadow2,boxShadow3,boxShadow
         padding: 15px;
         margin-bottom: 20px;
     }
+    #figureFoto img {
+        animation: cambioOpacidad 2s ease-in-out infinite;
+    }
     #divDesc {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left; /* Alinear el texto a la izquierda */
+    padding: 2px;
+    overflow: hidden;
+    width: 100%; /* Asegurar que el contenedor ocupe todo el ancho disponible */
+    animation: subirBajar 4s ease infinite;
+}
+
+    @keyframes subirBajar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
     }
 
+    @keyframes cambioOpacidad {
+        0% {
+            opacity: 1; /* Opacidad completa */
+        }
+        50% {
+            opacity: 0.5; /* Opacidad reducida */
+        }
+        100% {
+            opacity: 1; /* Vuelve a la opacidad completa */
+        }
+    }
+
+.icono-animado {
+  animation: changeOpacity 2s ease-in-out infinite;
+}
+
+
+   
 </style>

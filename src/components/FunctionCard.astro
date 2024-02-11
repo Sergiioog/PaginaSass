@@ -55,9 +55,23 @@ const {height, width,backgroundRGBA, boxShadow1, boxShadow2,boxShadow3,boxShadow
 </section>
 
 <style lang="scss">
-    section {
-        margin: 20px;
+   @keyframes pulse {
+    0% {
+        transform: scale3d(1, 1, 1);
     }
+    50% {
+        transform: scale3d(1.02, 1.02, 1.02);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+section {
+    margin: 20px;
+    animation: pulse 2s ease infinite;
+}
+
     #Icono_titulo {
         height: 15%;
         width: 100%;

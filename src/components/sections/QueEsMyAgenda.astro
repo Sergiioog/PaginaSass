@@ -1,3 +1,17 @@
+<script>
+    window.addEventListener('scroll', function() {
+      var datosTexto = document.getElementById('que_es_my_agenda');
+      var positionY = window.scrollY;
+  
+      if (positionY > 0) {
+        datosTexto.style.opacity = '1';
+      } else {
+        datosTexto.style.opacity = '0';
+      }
+    });
+  
+</script>
+
 <section id="que_es_my_agenda">
     <h1>¿Qué es MyAgenda?</h1>
     <div id="datos">
@@ -18,3 +32,12 @@
         </div>
     </div>
 </section>
+
+<style lang="scss">
+
+    #que_es_my_agenda {
+        opacity: 0;
+        transition: opacity 0.6s ease;
+    }
+
+</style>
