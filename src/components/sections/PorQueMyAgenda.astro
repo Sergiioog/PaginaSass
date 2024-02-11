@@ -75,16 +75,19 @@ ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    align-items: center; /* Solo necesitas definir align-items una vez */
-    flex-direction: column;
+    align-items: center;
+    flex-direction: row; /* Cambiando a fila para que los elementos se alineen horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
 }
+
 .divSeccion {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
-
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 li {
@@ -98,6 +101,7 @@ li {
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 20px;
+    margin: 10px; /* Añade un margen entre los elementos */
 }
 
 .divSeccion p {
@@ -106,6 +110,7 @@ li {
     margin-top: 25px;
     height: auto;
     font-size: 18px;
+    text-align: center;
 }
 
 </style>

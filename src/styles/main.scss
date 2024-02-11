@@ -104,14 +104,15 @@ header h2 {
 /*---SECCIÓN TÍTULO---*/
 /*---SECCIÓN QUE ES MY AGENDA---*/
 #que_es_my_agenda {
-    margin-top: 40px;
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: auto;
-    max-width: 90%;
-    margin: auto; /* Añadí esto para centrar horizontalmente en el caso de max-width < 100% */
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -129,6 +130,9 @@ header h2 {
     max-width: 90%;
     height: auto;
     margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 #datosTexto {
     height: auto;
