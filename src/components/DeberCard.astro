@@ -1,0 +1,70 @@
+---
+interface Props {
+    height: number;
+    width: number;
+    backgroundRGBA: string;
+    boxShadow1 ?: number;
+    boxShadow2 ?: number;
+    boxShadow3 ?: number;
+    boxShadow4 ?: number;
+    boxShadowRGBA ?: number;
+    backdropFilter : number;
+    borderRadius: number;
+    borderPix : number;
+    borderState ?: string;
+    borderRGBA : string;
+    imagen: string; 
+    descripcion: any;
+    altImagen : string;
+}
+const {height, width,backgroundRGBA, boxShadow1, boxShadow2,boxShadow3,boxShadow4,boxShadowRGBA, backdropFilter,
+    borderRadius,borderPix, borderState,borderRGBA,descripcion,imagen, altImagen} = Astro.props;
+---
+<section>
+    <figure id="figureFoto" style={{
+        height: `${height}px`,
+        width: `${width}px`,
+        background: `${backgroundRGBA}`, // Cambiado de backgroundRGBA a background
+        boxShadow: `${boxShadow1}px ${boxShadow2}px ${boxShadow3}px ${boxShadow4}px rgba(${boxShadowRGBA})`, // Ajustado el formato de la sombra
+        borderRadius: `${borderRadius}px`,
+        border: `${borderPix}px ${borderState || ''} ${borderRGBA}`, // Si no hay borderState, se usa una cadena vacía
+        backdropFilter: `blur(${backdropFilter}px)`,
+    
+        boxShadow1 : `${boxShadow1}`,
+        boxShadow2 : `${boxShadow2}`,
+        boxShadow3 : `${boxShadow3}`,
+        boxShadow4 : `${boxShadow4}`,
+        boxShadowRGBA : `${boxShadowRGBA}`,  
+        borderPix: `${borderPix}px`,
+        borderState: `${borderState}`,
+        borderRGBA: `${borderRGBA}`,
+    }}>
+        <img src={imagen} alt={altImagen}>
+    </figure>
+    <div id="divDesc">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing. Quis non doloremque quasi voluptatem similique amet.ritatis.</p>
+    </div>
+</section> 
+
+
+<style lang="scss">
+    section {
+        max-width: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #figureFoto {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    #divDesc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2px;
+    }
+
+</style>
