@@ -1,111 +1,204 @@
+---
+import DeberCard from '../DeberCard.astro';
+---
 <section>
-    <h1>Por qué MyAgenda</h1>
+    <h1>Por qué deberías usar MyAgenda</h1>
     <ul>
-        <div class="divSeccion">
-            <li>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> 
-                <path d="M17.8928 14V15.5403C17.8928 16.2412 17.8928 16.5917 17.772 16.9159C17.6512 17.2402 17.4187 17.5138 16.9537 18.0611L14.5722 20.8641C14.098 21.4222 13.8609 21.7013 13.5309 21.8506C13.2009 22 12.8213 22 12.0623 22H11.9377C11.1787 22 10.7991 22 10.4691 21.8506C10.1391 21.7013 9.902 21.4222 9.42782 20.8641L7.04634 18.0611C6.58132 17.5138 6.34881 17.2402 6.22802 16.9159C6.10722 16.5917 6.10722 16.2412 6.10722 15.5403V10.2771C6.10722 9.59221 6.10722 9.24977 5.96019 8.94876C5.81316 8.64776 5.53703 8.4249 4.98478 7.97919L4.77744 7.81185C3.59546 6.85789 3.00447 6.38092 3.00003 5.69048C2.99558 5.00004 3.51976 4.5665 4.56811 3.6994C4.7268 3.56815 4.88401 3.44537 5.03581 3.33647C5.60851 2.92561 6.43826 2.47259 7.02213 2.1703C7.45452 1.94644 7.97468 1.94578 8.41603 2.15357L8.68001 2.27785C8.74931 2.31047 8.80836 2.35956 8.85134 2.42026C10.3492 4.53585 13.6508 4.53585 15.1487 2.42026C15.1916 2.35956 15.2507 2.31047 15.32 2.27785L15.584 2.15357C16.0253 1.94578 16.5455 1.94644 16.9779 2.1703C17.5617 2.47259 18.3915 2.92561 18.9642 3.33647C19.116 3.44537 19.2732 3.56815 19.4319 3.69941C20.4802 4.5665 21.0044 5.00004 21 5.69048C20.9955 6.38092 20.4045 6.85789 19.2226 7.81185L19.0152 7.97919C18.463 8.4249 18.1868 8.64776 18.0398 8.94876C17.9141 9.20615 17.8959 9.49383 17.8932 10" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round">
-                </path> </g></svg>
-            </li>
-            <p>Construye tu cuerpo, con MyAgenda podrás ver los cambios en tu cuerpo día a día de manera controlada</p>
-        </div>
-        <div class="divSeccion">
-            <li>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 11.9999H17.1986C16.3689 11.9999 15.9541 11.9999 15.6102 12.1946C15.2664 12.3893 15.0529 12.745 14.6261 13.4564L14.5952 13.5079C14.1976 14.1706 13.9987 14.502 13.7095 14.4965C13.4202 14.4911 13.2339 14.1525 12.8615 13.4753L11.1742 10.4075C10.8269 9.77606 10.6533 9.46034 10.3759 9.44537C10.0986 9.43039 9.892 9.72558 9.47875 10.3159L9.19573 10.7203C8.75681 11.3473 8.53734 11.6608 8.21173 11.8303C7.88612 11.9999 7.50342 11.9999 6.73803 11.9999H6" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M8.96173 18.9108L9.42605 18.3219L8.96173 18.9108ZM12 5.5006L11.4596 6.0207C11.601 6.1676 11.7961 6.2506 12 6.2506C12.2039 6.2506 12.399 6.1676 12.5404 6.0207L12 5.5006ZM15.0383 18.9109L15.5026 19.4999V19.4999L15.0383 18.9109ZM12 20.4859L12 19.7359L12 20.4859ZM2.65666 13.3964C2.87558 13.748 3.33811 13.8556 3.68974 13.6367C4.04137 13.4178 4.14895 12.9552 3.93003 12.6036L2.65666 13.3964ZM6.52969 15.7718C6.23645 15.4793 5.76158 15.4798 5.46903 15.7731C5.17649 16.0663 5.17706 16.5412 5.47031 16.8337L6.52969 15.7718ZM2.75 9.13707C2.75 6.33419 4.00722 4.59507 5.57921 3.99711C7.15546 3.39753 9.35129 3.8302 11.4596 6.0207L12.5404 4.9805C10.1489 2.49583 7.3447 1.72069 5.04591 2.59512C2.74286 3.47116 1.25 5.88785 1.25 9.13707H2.75ZM15.5026 19.4999C16.9949 18.3234 18.7837 16.7461 20.2061 14.9838C21.6126 13.2412 22.75 11.2089 22.75 9.13703H21.25C21.25 10.688 20.3777 12.3829 19.0389 14.0417C17.716 15.6807 16.0239 17.1788 14.574 18.3219L15.5026 19.4999ZM22.75 9.13703C22.75 5.88784 21.2571 3.47115 18.9541 2.59511C16.6553 1.7207 13.8511 2.49583 11.4596 4.9805L12.5404 6.0207C14.6487 3.8302 16.8445 3.39753 18.4208 3.99711C19.9928 4.59506 21.25 6.33418 21.25 9.13703H22.75ZM8.49742 19.4998C9.77172 20.5044 10.6501 21.2359 12 21.2359L12 19.7359C11.2693 19.7359 10.8157 19.4174 9.42605 18.3219L8.49742 19.4998ZM14.574 18.3219C13.1843 19.4174 12.7307 19.7359 12 19.7359L12 21.2359C13.3499 21.2359 14.2283 20.5044 15.5026 19.4999L14.574 18.3219ZM3.93003 12.6036C3.18403 11.4054 2.75 10.2312 2.75 9.13707H1.25C1.25 10.617 1.83054 12.0695 2.65666 13.3964L3.93003 12.6036ZM9.42605 18.3219C8.50908 17.599 7.49093 16.7307 6.52969 15.7718L5.47031 16.8337C6.48347 17.8445 7.54819 18.7515 8.49742 19.4998L9.42605 18.3219Z" fill="#ffffff"></path> </g></svg>
-            </li>
-            <p>Haz ejercicio, MyAgenda motiva a la gente a conseguir lo mejor de sí mismas.</p>
-        </div>
-        <div class="divSeccion">
-            <li>
-                <svg fill="#ffffff"  version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460 460" xml:space="preserve" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_463_"> <path id="XMLID_470_" d="M308.834,211.599c-28.372-59.984-24.014-50.504-25.128-53.744l-26.122-75.933 c-0.55-1.599-1.346-3.102-2.358-4.457L202.18,6.534c-5.386-7.203-15.595-8.678-22.8-3.289c-7.204,5.387-8.677,15.595-3.29,22.799 l51.517,68.888l18.345,53.326l-123.25,58.297c-2.749,0.947-12.628,5.934-14.504,17.851L82.036,435.606 c-1.603,12.945,8.486,24.391,21.581,24.391c10.803,0,20.164-8.053,21.526-19.05l23.732-191.574l23.96,30.611l49.508,164.55 c3.455,11.485,15.566,17.996,27.055,14.54c11.486-3.456,17.995-15.569,14.54-27.054l-48.037-159.662l60.436-30.63l-15.222,69.872 c-0.327,1.501-0.44,3.04-0.336,4.572l5.239,77.053c0.61,8.966,8.369,15.755,17.357,15.146c8.975-0.61,15.756-8.381,15.147-17.356 l-5.082-74.743l17.805-81.731C313.141,225.25,311.347,217.826,308.834,211.599z"></path> <circle id="XMLID_501_" cx="340.43" cy="156.854" r="37.693"></circle> </g> </g></svg>
-            </li>
-            <p>Estiramientos, MyAgenda contiene una sección dedicada a la realización de estiramientos orientativos para el usuario</p>
-        </div>
-        <div class="divSeccion">
-            <li>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M22 14V12C22 8.22876 22 6.34315 20.8284 5.17157C19.6569 4 17.7712 4 14 4M14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M7 4V2.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M17 4V2.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <circle cx="18" cy="18" r="3" stroke="#ffffff" stroke-width="1.5"></circle> <path d="M20.5 20.5L22 22" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M21.5 9H16.625H10.75M2 9H5.875" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
-            </li>
-            <p>Con el calendario de MyAgenda, el usuario podrá realizar un seguimiento a detalle de su progresion día a día</p>
-        </div>
-        <div class="divSeccion">
-            <li>
-                <svg fill="#ffffff" viewBox="0 0 24 24" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M22.942,6.837,20.76,4.654l.947-.947a1,1,0,1,0-1.414-1.414l-.947.947L17.163,1.058a3.7,3.7,0,0,0-5.105,0,3.609,3.609,0,0,0,0,5.106L14.24,8.346,8.346,14.24,6.163,12.058a3.7,3.7,0,0,0-5.105,0,3.609,3.609,0,0,0,0,5.106L3.24,19.346l-.947.947a1,1,0,1,0,1.414,1.414l.947-.947,2.183,2.182a3.609,3.609,0,0,0,5.105,0h0a3.608,3.608,0,0,0,0-5.105L9.76,15.655l5.9-5.895,2.182,2.182a3.609,3.609,0,0,0,5.105,0h0a3.608,3.608,0,0,0,0-5.105ZM11,20.39a1.6,1.6,0,0,1-.472,1.138,1.647,1.647,0,0,1-2.277,0L2.472,15.749a1.61,1.61,0,1,1,2.277-2.277l5.779,5.779A1.6,1.6,0,0,1,11,20.39Zm10.528-9.862a1.647,1.647,0,0,1-2.277,0L13.472,4.749a1.61,1.61,0,1,1,2.277-2.277l5.779,5.779a1.609,1.609,0,0,1,0,2.277Z"></path></g></svg>
-            </li>
-            <p>MyAgenda también contiene una sección de ejercicios de gimnasio, para orientar al usuario y que los realice correctamente.</p>
-        </div>
-        <div class="divSeccion">
-            <li>
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 2H22" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M9 10.5L10.2929 9.20711C10.6262 8.87377 10.7929 8.70711 11 8.70711C11.2071 8.70711 11.3738 8.87377 11.7071 9.20711L12.2929 9.79289C12.6262 10.1262 12.7929 10.2929 13 10.2929C13.2071 10.2929 13.3738 10.1262 13.7071 9.79289L15 8.5" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M12 21L12 17" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M10 22L12 21" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M14 22L12 21" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 2V10.5C20 13.5641 20 15.0962 18.9958 16.0481C17.9916 17 16.3753 17 13.1429 17H10.8571C7.62465 17 6.00841 17 5.00421 16.0481C4 15.0962 4 13.5641 4 10.5V2" stroke="#ffffff" stroke-width="1.5"></path> </g></svg>
-            </li>
-            <p>Haz un seguimiento de tus resultados, esa es nuetra mayor motivacion</p>
-        </div>
+        <li>
+            <DeberCard 
+            height={110}, 
+            width={110},
+            backgroundRGBA="rgba( 213, 213, 213, 0.1 )",
+            boxShadow1={2},
+            boxShadow2={2},
+            boxShadow3={20},
+            boxShadow4={0.1},
+            borderRadius={10},
+            borderPix={1},
+            backdropFilter={20},
+            borderState="solid",
+            borderRGBA="rgba( 255, 255, 255, 0.18 )",
+            descripcion={`askdooaksda askdoa pdskak apdkaksd asdk pakpaspk saspa kodpak dsa`},
+            imagen="assets/icons/calendar.svg",
+            altImagen="imagen de Card" 
+        />
+        </li>
+        <li>
+            <DeberCard 
+            height={110}, 
+            width={110},
+            backgroundRGBA="rgba( 213, 213, 213, 0.1 )",
+            boxShadow1={2},
+            boxShadow2={2},
+            boxShadow3={20},
+            boxShadow4={0.1},
+            borderRadius={10},
+            borderPix={1},
+            backdropFilter={20},
+            borderState="solid",
+            borderRGBA="rgba( 255, 255, 255, 0.18 )",
+            descripcion={`askdooaksda askdoa pdskak apdkaksd asdk pakpaspk saspa kodpak dsa`},
+            imagen="assets/icons/calendar.svg",
+            altImagen="imagen de Card" 
+        />
+        </li>
+        <li>
+            <DeberCard 
+            height={110}, 
+            width={110},
+            backgroundRGBA="rgba( 213, 213, 213, 0.1 )",
+            boxShadow1={2},
+            boxShadow2={2},
+            boxShadow3={20},
+            boxShadow4={0.1},
+            borderRadius={10},
+            borderPix={1},
+            backdropFilter={20},
+            borderState="solid",
+            borderRGBA="rgba( 255, 255, 255, 0.18 )",
+            descripcion={`askdooaksda askdoa pdskak apdkaksd asdk pakpaspk saspa kodpak dsa`},
+            imagen="assets/icons/calendar.svg",
+            altImagen="imagen de Card" 
+        />
+        </li>
+        <li>
+            <DeberCard 
+            height={110}, 
+            width={110},
+            backgroundRGBA="rgba( 213, 213, 213, 0.1 )",
+            boxShadow1={2},
+            boxShadow2={2},
+            boxShadow3={20},
+            boxShadow4={0.1},
+            borderRadius={10},
+            borderPix={1},
+            backdropFilter={20},
+            borderState="solid",
+            borderRGBA="rgba( 255, 255, 255, 0.18 )",
+            descripcion={`askdooaksda askdoa pdskak apdkaksd asdk pakpaspk saspa kodpak dsa`},
+            imagen="assets/icons/calendar.svg",
+            altImagen="imagen de Card" 
+        />
+        </li>
+        <li>
+            <DeberCard 
+            height={110}, 
+            width={110},
+            backgroundRGBA="rgba( 213, 213, 213, 0.1 )",
+            boxShadow1={2},
+            boxShadow2={2},
+            boxShadow3={20},
+            boxShadow4={0.1},
+            borderRadius={10},
+            borderPix={1},
+            backdropFilter={20},
+            borderState="solid",
+            borderRGBA="rgba( 255, 255, 255, 0.18 )",
+            descripcion={`askdooaksda askdoa pdskak apdkaksd asdk pakpaspk saspa kodpak dsa`},
+            imagen="assets/icons/calendar.svg",
+            altImagen="imagen de Card" 
+        />
+        </li>
+        <li>
+            <DeberCard 
+            height={110}, 
+            width={110},
+            backgroundRGBA="rgba( 213, 213, 213, 0.1 )",
+            boxShadow1={2},
+            boxShadow2={2},
+            boxShadow3={20},
+            boxShadow4={0.1},
+            borderRadius={10},
+            borderPix={1},
+            backdropFilter={20},
+            borderState="solid",
+            borderRGBA="rgba( 255, 255, 255, 0.18 )",
+            descripcion={`askdooaksda askdoa pdskak apdkaksd asdk pakpaspk saspa kodpak dsa`},
+            imagen="assets/icons/calendar.svg",
+            altImagen="imagen de Card" 
+        />
+        </li>
+        
+        
+        
+        
+        
+        
     </ul>
 </section>
 
 <style lang="scss">
 
-section {
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+// Variables
+$section-margin-top: 90px;
+$section-max-width: 90%;
+$section-margin-left-right: calculate-margin(90%);
+
+// Funciones
+@function calculaMargen($valorMargen) {
+  @return $valorMargen / 2;
 }
 
-section h1 {
+// Mixin 
+@mixin centraElementos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Estilos para section
+section {
+  margin-top: $section-margin-top;
+  height: 100%;
+  max-width: $section-max-width;
+  margin: 0 auto;
+  @include centraElementos;
+  flex-direction: column;
+  
+  //Anidamiento del h1 para darle estilos especificos
+  h1 {
     font-size: 35px;
     text-align: center;
     color: white;
     letter-spacing: -1.5px;
     line-height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 90px;
+    @include centraElementos;
+  }
 }
+
 
 ul {
-    margin: 50px;
-    width: 100%;
-    height: auto;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Solo necesitas definir align-items una vez */
-    flex-direction: column;
-}
-.divSeccion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
+  margin: 50px;
+  width: 100%;
+  height: auto;
+  list-style: none;
+  @include centraElementos;
+  flex-direction: row;
+  flex-wrap: wrap; // Permite que los elementos se envuelvan a la siguiente línea
 
-}
-
-li {
-    height: 120px;
-    width: 120px;
-    background-color: gray;
-    background: rgba(213, 213, 213, 0.1);
-    box-shadow: 2px 2px 20px 0.1px rgb(154, 154, 154);
-    backdrop-filter: blur(10.5px);
-    -webkit-backdrop-filter: blur(10.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
+  //Anidamiento de los li de la ul
+  li {
     padding: 20px;
+    margin: 10px; // Añade un margen entre los elementos
+  }
+}
+
+.divSeccion {
+  @include centraElementos;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 0 calculate-margin(30px); // Calcula el margen izquierdo y derecho
+  
 }
 
 .divSeccion p {
-    width: 300px;
-    max-width: 300px;
-    margin-top: 25px;
-    height: auto;
-    font-size: 18px;
+  width: 300px;
+  max-width: 300px;
+  margin-top: 25px;
+  height: auto;
+  font-size: 18px;
+  text-align: center;
 }
-
 </style>

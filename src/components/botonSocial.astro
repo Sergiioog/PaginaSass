@@ -26,7 +26,7 @@ backdropFilter, border,borderType,borderRgba, rutaDestino, titulo, rutaImagen, a
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    width: `${width}px`,
+    width: `150px`,
     height: `${height}px`,
     borderRadius: `${borderRadius}px`,
     background: background,
@@ -43,8 +43,7 @@ backdropFilter, border,borderType,borderRgba, rutaDestino, titulo, rutaImagen, a
     marginLeft: '15px' /* Agrega la transición para la propiedad 'transform' con una duración de 0.3 segundos y una función de aceleración */
 }}>
     <img src={rutaImagen} alt={altImagen} style={{
-        maxWidth: '100%',
-        maxHeight: '100%',
+        maxWidth: '20%',
         width: '23%', // Ajusta el ancho automáticamente
         height: 'auto', // Ajusta la altura automáticamente
         flexGrow: 0, // Evita que la imagen se expanda para llenar el espacio
@@ -54,7 +53,7 @@ backdropFilter, border,borderType,borderRgba, rutaDestino, titulo, rutaImagen, a
     <span style={{ 
         color: 'white', 
         padding: '10px',
-        marginRight: '20px',
+        marginRight: '40px',
         fontSize : '20px',
         fontWeight: 'bold',
         marginTop: '2px' }}>{titulo}</span>
