@@ -3,3 +3,59 @@
     <h1>MyAgenda</h1>
     <h2>Crea tu cuerpo soñado</h2>
 </section>
+
+<style lang="scss">
+
+// Variables
+$titulo-font-size: 60px;
+$subtitulo-font-size: 30px;
+$subtitulo-margin-top: 0px;
+$tamano-foto: 1000px;
+
+// Mixin para centrar verticalmente
+@mixin centrar {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+  width: 100%;
+  text-align: center;
+}
+
+// Estilos para #seccionTitulo
+#seccionTitulo {
+  height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  // Estilos para el título h1 dentro de #seccionTitulo
+  h1 {
+    font-size: $titulo-font-size;
+    color: white;
+    letter-spacing: -3px;
+    @include centrar;
+    margin: 0;
+  }
+
+  // Estilos para el subtítulo h2 dentro de #seccionTitulo
+  h2 {
+    font-size: $subtitulo-font-size;
+    color: white;
+    letter-spacing: -1px;
+    margin-top: $subtitulo-margin-top;
+    @include centrar;
+    top: 45%;
+
+  }
+}
+
+
+#fotoInicial {
+  width: $tamano-foto;
+  margin-bottom: 100px;
+  object-fit: cover;
+}
+</style>

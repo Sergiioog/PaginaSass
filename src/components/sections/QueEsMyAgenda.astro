@@ -1,12 +1,12 @@
 <script>
-    window.addEventListener('scroll', function() {
-      var datosTexto = document.getElementById('que_es_my_agenda');
-      var positionY = window.scrollY;
+    window.addEventListener('scroll', function() { //Event listener que escucha el scroll y ejecuta la funcion
+      var datosTexto = document.getElementById('que_es_my_agenda'); //Cogemos el id del div
+      var positionY = window.scrollY; //Posicion del scroll 
   
-      if (positionY > 0) {
-        datosTexto.style.opacity = '1';
+      if (positionY > 0) { //Si el usuario ha desplazado la página hacia abajo
+        datosTexto.style.opacity = '1'; //se hace visible.
       } else {
-        datosTexto.style.opacity = '0';
+        datosTexto.style.opacity = '0'; // se hace invisible.
       }
     });
   
@@ -35,9 +35,70 @@
 
 <style lang="scss">
 
-    #que_es_my_agenda {
-        opacity: 0;
-        transition: opacity 0.6s ease;
-    }
+// Variables
+$margin-top: 90px;
+$max-width-section: 85%;
+$max-width-datos: 90%;
+$font-size-h1: 35px;
+$font-size-datos: 18px;
+$font-weight-datos: 550;
+
+// Mixin para centrar y alinear elementos flexibles
+@mixin centraElementos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Estilos para #que_es_my_agenda
+#que_es_my_agenda {
+  margin-top: $margin-top;
+  height: auto;
+  max-width: $max-width-section;
+  margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  @include centraElementos;
+  flex-direction: column;
+  
+  // Estilos para el título h1 dentro de #que_es_my_agenda
+  h1 {
+    font-size: $font-size-h1;
+    text-align: center;
+    color: white;
+    letter-spacing: -1.5px;
+    margin-top: 30px;
+    line-height: 40px;
+  }
+}
+
+#datos {
+  max-width: $max-width-datos;
+  height: auto;
+  margin: 15px auto;
+  
+  #datosTexto {
+    height: auto;
+    width: 100%;
+    font-size: $font-size-datos;
+    font-weight: $font-weight-datos;
+    margin-top: 10px;
+  }
+}
+
+#datosImagen {
+  width: 100%;
+  height: auto;
+  overflow: hidden; 
+  
+  #cBumSin {
+    height: 100%; 
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    display: none;
+  }
+}
+
 
 </style>

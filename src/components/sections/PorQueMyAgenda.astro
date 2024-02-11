@@ -129,64 +129,76 @@ import DeberCard from '../DeberCard.astro';
 
 <style lang="scss">
 
-section {
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+// Variables
+$section-margin-top: 90px;
+$section-max-width: 90%;
+$section-margin-left-right: calculate-margin(90%);
+
+// Funciones
+@function calculaMargen($valorMargen) {
+  @return $valorMargen / 2;
 }
 
-section h1 {
+// Mixin 
+@mixin centraElementos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Estilos para section
+section {
+  margin-top: $section-margin-top;
+  height: 100%;
+  max-width: $section-max-width;
+  margin: 0 auto;
+  @include centraElementos;
+  flex-direction: column;
+  
+  //Anidamiento del h1 para darle estilos especificos
+  h1 {
     font-size: 35px;
     text-align: center;
     color: white;
     letter-spacing: -1.5px;
     line-height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 90px;
+    @include centraElementos;
+  }
 }
 
+
 ul {
-    margin: 50px;
-    width: 100%;
-    height: auto;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row; /* Cambiando a fila para que los elementos se alineen horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+  margin: 50px;
+  width: 100%;
+  height: auto;
+  list-style: none;
+  @include centraElementos;
+  flex-direction: row;
+  flex-wrap: wrap; // Permite que los elementos se envuelvan a la siguiente línea
+
+  //Anidamiento de los li de la ul
+  li {
+    padding: 20px;
+    margin: 10px; // Añade un margen entre los elementos
+  }
 }
 
 .divSeccion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-
-li {
-
-    padding: 20px;
-    margin: 10px; /* Añade un margen entre los elementos */
+  @include centraElementos;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 0 calculate-margin(30px); // Calcula el margen izquierdo y derecho
+  
 }
 
 .divSeccion p {
-    width: 300px;
-    max-width: 300px;
-    margin-top: 25px;
-    height: auto;
-    font-size: 18px;
-    text-align: center;
+  width: 300px;
+  max-width: 300px;
+  margin-top: 25px;
+  height: auto;
+  font-size: 18px;
+  text-align: center;
 }
-
 </style>

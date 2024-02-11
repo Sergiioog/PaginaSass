@@ -66,36 +66,42 @@ import BotonSocial from "../botonSocial.astro"
 </section>
 
 <style lang="scss">
-    section {
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+// Variables
+$section-margin-top: 90px;
+$section-max-width: 90%;
+$section-margin-left-right: auto;
+
+@mixin centraElementos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section h1 {
+section {
+  margin-top: $section-margin-top;
+  height: 100%;
+  max-width: $section-max-width;
+  margin-left: $section-margin-left-right;
+  margin-right: $section-margin-left-right;
+  @include centraElementos;
+  flex-direction: column;
+  
+  h1 {
     font-size: 35px;
     text-align: center;
     color: white;
     letter-spacing: -1.5px;
     line-height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section div {
+    @include centraElementos;
+  }
+  
+  // Estilos para los div dentro de section
+  div {
     margin-top: 30px;
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include centraElementos;
     margin-bottom: 30px;
-
+  }
 }
 </style>
