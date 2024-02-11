@@ -7,11 +7,11 @@ html {
     color: $blanco-letras !important;;
     height: 100%;
     width: 100%;
-    background-color: $color-fondo !important;;
+    background-color: $color-fondo !important;
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     
-  
+    
 }
 /*------------HEADER---------------*/
 header {
@@ -55,3 +55,4 @@ header h2 {
     cursor: pointer;
     color: $color-header;
 }
+

@@ -104,7 +104,7 @@ section {
 
 #divMac, #divIpad, #divIphone {
   height: auto;
-  width: 100%;
+  width: 80%;
   opacity: 0;
   transition: transform $transition-duration ease;
 }
@@ -125,5 +125,16 @@ section {
   transform: translateX(0);
 }
 
+@media screen and (min-width: 768px) and (max-width:1200px) {
+  section {
+    max-width: 75%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    max-width: 50%;
+  }
+}
 
 </style>
