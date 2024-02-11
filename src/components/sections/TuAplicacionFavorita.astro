@@ -2,10 +2,10 @@
 
    window.addEventListener('scroll', function() {
         let divMac = document.getElementById('divMac');
-        let divPosition = divMac.getBoundingClientRect().top;
+        let divPosition = divMac.getBoundingClientRect().top; // obtiene la posición vertical de divMac con respecto al borde superior del viewport 
         let viewportHeight = window.innerHeight;
 
-        if (divPosition < viewportHeight / 2) {
+        if (divPosition < viewportHeight / 2) { //comprueba si divMac está ubicado por encima de la mitad de la altura de la ventana visible en el navegador para controlar si se hace visible o no
             divMac.classList.add('active');
         } else {
             divMac.classList.remove('active');
@@ -58,75 +58,72 @@
 
 <style lang="scss">
 
-    section {
-    margin-top: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+// Variables
+$section-margin-top: 90px;
+$section-max-width: 90%;
+$transition-duration: 0.8s;
+
+@mixin centrarImagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section h1 {
+section {
+  margin-top: $section-margin-top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  max-width: $section-max-width;
+  margin: 0 auto;
+
+  h1 {
     font-size: 35px;
     text-align: center;
     color: white;
     letter-spacing: -1.5px;
     line-height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-section div {
+    @include centrarImagen;
+  }
+
+  div {
     height: auto;
     width: 100%;
     margin-top: 30px;
-    
+    //Img dentro del div
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
-section div img {
-    object-fit: cover;
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
+
+#divMac, #divIpad, #divIphone {
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: transform $transition-duration ease;
 }
 
 #divMac {
-  height: auto;
-  width: 100%;
-  opacity: 0;
   transform: translateX(-100%);
-  transition: transform 0.8s ease;
 }
 #divIpad {
-  height: auto;
-  width: 100%;
-  opacity: 0;
   transform: translateX(100%);
-  transition: transform 0.8s ease;
 }
 #divIphone {
-    height: auto;
-    width: 100%;
-    opacity: 0;
-    transform: translateY(25%);
-    transition: transform 0.8s ease;
-}
-#divMac.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-#divIpad.active {
-  opacity: 1;
-  transform: translateX(0);
-}
-#divIphone.active {
-    opacity: 1;
-    transform: translateX(0);
+  transform: translateY(25%);
 }
 
+// Estilos para los elementos activos
+#divMac.active, #divIpad.active, #divIphone.active {
+  opacity: 1;
+  transform: translateX(0);
+}
 
 
 </style>

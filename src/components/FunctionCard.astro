@@ -1,5 +1,5 @@
 ---
-interface Props {
+interface Props { //Valores para 
     height: number;
     width: number;
     backgroundRGBA: string;
@@ -55,127 +55,58 @@ const {height, width,backgroundRGBA, boxShadow1, boxShadow2,boxShadow3,boxShadow
 </section>
 
 <style lang="scss">
-   @keyframes pulse {
-    0% {
-        transform: scale3d(1, 1, 1);
-    }
-    50% {
-        transform: scale3d(1.02, 1.02, 1.02);
-    }
-    100% {
-        transform: scale3d(1, 1, 1);
-    }
+@keyframes pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.02, 1.02, 1.02);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
+// Estilos para la sección
 section {
-    margin: 20px;
-    animation: pulse 2s ease infinite;
+  margin: 20px;
+  animation: pulse 2s ease infinite;
 }
 
-    #Icono_titulo {
-        height: 15%;
-        width: 100%;
-        display: flex;
-        align-items: center;
+// Estilos para el contenedor de icono y título
+#Icono_titulo {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
 
-    }
-    #Icono_titulo img {
-        max-height: 100%;
-        width: 40px;
-        margin-left: 10px;
-    }
-    #Icono_titulo h3 {
-        margin-left:2px;
-        font-size: 22px;
-        margin-left: 10px;
-    }
-    #divDescripcion {
-        width: 100%;
-        height: 85%;
-        padding: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    #divDescripcion img {
-        max-width: 100%;
-        width:70%;
-        margin-top: 10px;
+  img {
+    max-height: 100%;
+    width: 40px;
+    margin-left: 10px;
+  }
 
-    }
-</style>
-
-<!-- <section>
-    <div id="tituloCard">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
-          </svg>  
-          <h3>Agenda para guardar resultados</h3>        
-    </div>
-    <div id="divTexto">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos iusto saepe ut, eius eveniet dolorem e nesciunt, minus eligendi, ipsum hic veritatis ad!</p>
-    </div>
-    <div id="divFoto">
-        <img src="assets/images/stats1.jpeg" alt="Stats">
-    </div>
-</section>
-
-<style lang="scss">
-    section {
-        height: 400px;
-        width: 400px;
-        background: rgba( 213, 213, 213, 0.1 );
-        box-shadow:2px 2px 20px 0.1px rgb(154, 154, 154);   
-        backdrop-filter: blur( 10.5px );
-        -webkit-backdrop-filter: blur( 10.5px );
-        border-radius: 10px;
-        border: 1px solid rgba( 255, 255, 255, 0.18 );
-        margin: 30px;
-
-    }
-    #tituloCard {
-        height: 60px;
-        max-height: 25%;
-        padding: 5px;
-        width: 100%;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-      
-    }
-    #tituloCard svg {
-        max-width: 100%;
-        width: 40px;
-        height: 40px;
-        max-height: 100%;
-    }
-    #tituloCard h3 {
-        margin-top: 10px;
-        margin-left: 10px;
-        text-align: justify;
-        font-size: 20px;
-        white-space: 2px;
-    }
-    #divTexto {
-        padding: 10px;
-        font-weight: 500;
-        text-align: justify;
-    }
-    #divFoto {
-    height: 245px; /* ajusta la altura según sea necesario */
-    overflow: hidden; /* oculta cualquier contenido que sobresalga del contenedor */
-    position: relative; /* establece el contexto de posicionamiento para los elementos hijos */
-    border-end-end-radius: 10px;
+  h3 {
+    font-size: 22px;
+    margin-left: 2px;
+    margin-left: 10px;
+  }
 }
 
-#divFoto img {
-    max-width: none; /* anula cualquier restricción de ancho máximo */
-    position: absolute; /* posiciona la imagen dentro del contenedor */
-    top: 20px; /* ajusta la posición vertical según sea necesario */
-    left: 40px; /* ajusta la posición horizontal según sea necesario */
-    /* si es necesario, puedes ajustar más propiedades de posicionamiento aquí */
-}
- -->
+// Estilos para el contenedor de descripción
+#divDescripcion {
+  width: 100%;
+  height: 85%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
+  img {
+    max-width: 100%;
+    width: 70%;
+    margin-top: 10px;
+  }
+}
 </style>

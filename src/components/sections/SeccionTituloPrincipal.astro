@@ -13,7 +13,7 @@ $subtitulo-margin-top: 0px;
 $tamano-foto: 1000px;
 
 // Mixin para centrar verticalmente
-@mixin centrar {
+@mixin centrarImagen {
   position: absolute;
   top: 30%;
   transform: translateY(-30%);
@@ -21,7 +21,6 @@ $tamano-foto: 1000px;
   text-align: center;
 }
 
-// Estilos para #seccionTitulo
 #seccionTitulo {
   height: 52vh;
   display: flex;
@@ -31,22 +30,20 @@ $tamano-foto: 1000px;
   position: relative;
   overflow: hidden;
 
-  // Estilos para el título h1 dentro de #seccionTitulo
   h1 {
     font-size: $titulo-font-size;
     color: white;
     letter-spacing: -3px;
-    @include centrar;
+    @include centrarImagen;
     margin: 0;
   }
 
-  // Estilos para el subtítulo h2 dentro de #seccionTitulo
   h2 {
     font-size: $subtitulo-font-size;
     color: white;
     letter-spacing: -1px;
     margin-top: $subtitulo-margin-top;
-    @include centrar;
+    @include centrarImagen;
     top: 45%;
 
   }
